@@ -4,7 +4,7 @@
     <title>
         Home - MyStackApp
     </title>
-    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
 </head>
 <body>
@@ -17,21 +17,23 @@
             </div>
         </nav>
     </header>
-    <nav>
-        <ul id="nav-mobile">
-            <li>
-                <a href="home.html">Home</a>
-            </li>
-            <li>
-                <a href="product.html">My Gold</a>
-            </li>
-            <li>
-                <a href="product.html">My Silver</a>
-            </li>
-            <li>
-                <a href="product.html">My Platinum</a>
-            </li>
-        </ul>
-    </nav>
+    <div class="row">
+        <nav id="sidebar" class="col s1">
+            <ul>
+                <li>
+                    <a href="home.html"><i class="mdi-action-home"></i><span>Home</span></a>
+                </li>
+                <li>
+                    <a href="product.html"><i class="mdi-au"></i><span>My Gold</span></a>
+                </li>
+                <li>
+                    <a href="product.html"><i class="mdi-ag"></i><span>My Silver</span></a>
+                </li>
+                <li>
+                    <a href="product.html"><i class="mdi-pt"></i><span>My Platinum</span></a>
+                </li>
+            </ul>
+        </nav>
+    </div>
 </body>
 </html>

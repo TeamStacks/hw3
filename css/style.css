@@ -13,3 +13,46 @@
 .button-width {
 	width:100%;
 }
+
+.mdi-au:before {
+    content: 'Au';
+}
+
+.mdi-ag:before {
+    content: 'Ag';
+}
+
+.mdi-pt:before {
+    content: 'Pt';
+}
+
+nav {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+#sidebar {
+    padding: 0;
+    height: auto;
+    line-height: 64px;
+    background-color: white;
+}
+
+#sidebar ul li {
+    float: none;
+    padding: 16px 0;
+}
+
+#sidebar ul li a {
+    color: gray;
+}
+
+#sidebar ul li a > * {
+    display: block;
+    text-align: center;
+    line-height: 32px;
+}
+
+#sidebar ul li a i {
+    font-size: 2em;
+}
