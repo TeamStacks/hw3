@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>
+         Home - MyStackApp
+      </title>
+      <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
+      <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+   </head>
+   <body>
+      <header>
+         <nav>
+            <div class="nav-wrapper">
+               <a href="#" class="left"><i class="mdi-navigation-refresh"></i></a>
+               <a href="home.html" class="brand-logo left">MyStackApp</a>
+               <a href="#" class="right"><i class="mdi-action-settings"></i></a>
+            </div>
+         </nav>
+      </header>
+      <div class="row">
+         <nav id="sidebar" class="col s1">
+            <ul>
+               <li>
+                  <a href="home.html"><i class="mdi-action-home"></i><span>Home</span></a>
+               </li>
+               <li>
+                  <a href="product.html"><i class="mdi-au"></i><span>My Gold</span></a>
+               </li>
+               <li>
+                  <a href="product.html"><i class="mdi-ag"></i><span>My Silver</span></a>
+               </li>
+               <li>
+                  <a href="product.html"><i class="mdi-pt"></i><span>My Platinum</span></a>
+               </li>
+            </ul>
+         </nav>
+         <!--  Main Page Contents  -->
+         <main>
+            <div class="container">
+               <div class="row">
+                  <div class="col s12 m6">
+                     <button class="btn waves-effect waves-light red lighten-3">Add Item</button>
+                  </div>
+                  <div class="col s12 m8 l8">
+                     <form class="col s12" style = "text-align: right; margin-top: 75px;">
+                        <label>Metal</label>
+                        <select class="browser-default" style="display: inline; width: 150px; height: 30px; margin-top: 4px; margin-left: 3px">
+                           <option value="1">Gold</option>
+                           <option value="2">Silver</option>
+                           <option value="3">Platinum</option>
+                        </select>
+                        <br>
+                        <label>Type</label>
+                        <select class="browser-default" style="display: inline; width: 150px; height: 30px; margin-top: 4px; margin-left: 3px">
+                           <option value="1">US Eagle</option>
+                        </select>
+                        <br>
+                        <label>Purchase Date</label>
+                        <select class="browser-default" style="display: inline; width: 150px; height: 30px; margin-top: 4px; margin-left: 3px;">
+                           <option value="1">US Eagle</option>
+                        </select>
+                        <br>
+                        <label>Qty.</label>
+                        <input type="text" name="Qty." value="1" style="display: inline; width: 150px; height: 20px; margin-top: 4px; margin-bottom: 4px;  margin-left: 3px; padding-left: 1px;
+                           border-style: solid;
+                           border-color: black;
+                           border-width: 1px;
+                           padding-left: 1px;" >
+                        <br>
+                        <label>Premium</label>
+                        <input type="text" name="Premium" value="47.00" style="display: inline; width: 150px; height: 20px; margin-top: 4px;margin-bottom: 4px; margin-left: 3px; padding-left: 1px;
+                           border-style: solid;
+                           border-color: black;
+                           border-width: 1px;
+                           padding-left: 1px;" >
+                        <br>
+                        <label>Unit Price</label>
+                        <input type="text" name="Unit Price" value="1250.60" style="display: inline; width: 150px; height: 20px; margin-top: 4px; margin-bottom: 4px; margin-left: 3px; padding-left: 1px;
+                           border-style: solid;
+                           border-color: black;
+                           border-width: 1px;
+                           padding-left: 1px;" >
+                        <br>
+                        <div style="margin-right: 130px;">
+                           <label>Gold %</label>
+                           <div style="display: inline; margin-left: 8px;"> 0.1 </div>
+                           <br>
+                           <label>Weight/unit (g)</label>
+                           <div style="display: inline; margin-left: 8px;"> 1.244 </div>
+                           <br>
+                           <label>Gold g/u</label>
+                           <div style="display: inline; margin-left: 8px;"> 1.244 </div>
+                           <br>
+                           <label>Gold ozt/u</label>
+                           <div style="display: inline; margin-left: 8px;"> 0.0400 </div>
+                           <br>
+                           <label>Total au (ozt)</label>
+                           <div style="display: inline; margin-left: 8px;"> 0.0400 </div>
+                           <br>
+                           <label><b>TOTAL</b></label>
+                           <div style="display: inline; margin-left: 8px;"> 1199.10 </div>
+                           <br>
+                        </div>
+                     </form>
+                     <a class="waves-effect waves-teal btn-flat" style= "margin-left: 80px;">Cancel</a>
+                     <a class="waves-effect waves-light btn" style= "display: inline; height: 30px; margin-top: 10px; margin-left: 20px;">Save to My Stack</a>
+                  </div>
+                  
+                  <img class="responsive-img" src="add_image.png" style= "position: absolute; top: 180px; left: 90px;">
+                   
+               </div>
+            </div>
+         </main>
+      </div>
+   </body>
+</html>
