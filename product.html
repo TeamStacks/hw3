@@ -20,7 +20,7 @@
         </nav>
     </header>
     <div class="row">
-        <nav id="sidebar" class="col s1 l1 hide-on-med-and-down">
+        <nav id="sidebar" class="col m2 l2 hide-on-small-only">
             <ul>
                 <li>
                     <a href="home.html"><i class="mdi-action-home"></i><span>Home</span></a>
@@ -36,87 +36,89 @@
                 </li>
             </ul>
         </nav>
-        <div class="col l11">
-            <div class="col s12 m12 l4">
-                <div style="padding: 10px;">
-                    <div class="col s6 m6 l6">
-                        <div style="font-size: xx-large;">$18,234.10</div>
-                        <div>My Gold Value</div>
-                    </div>
-                    <div class="col s6 m6 l4 offset-l2" style="color: gray; font-size: small">
-                        <div>Daily: +3.5%</div>
-                        <div>Overall: +1.2%</div>
-                    </div>
-                </div>
-                <div class="col l12 hide-on-med-and-down" style="border: 1px solid lightgray; border-radius: 10px; padding: 10px">
+        <div class="col s12 m5 l4">
+            <div id="total-summary" style="background-color: white;">
+                <div class="left">
                     <div>
-                        <div style="border-bottom: 1px solid lightgray; padding-top: 5px">Current Spot</div>
-                        <div class="row" style="padding-top: 10px">
-                            <div class="col s4 center-align">
-                                <div>1206.10</div>
-                                <div>Bid</div>
-                            </div>
-                            <div class="col s4 center-align">
-                                <div>1207.10</div>
-                                <div>Ask</div>
-                            </div>
-                            <div class="col s4 center-align">
-                                <div>+23.40</div>
-                                <div>Change</div>
-                            </div>
+                        <span id="total-value">$18,234.10</span>
+                    </div>
+                    <div>Total Value</div>
+                </div>
+                <div class="right right-align">
+                    <div id="total-daily-change">Daily +3.5%</div>
+                    <div id="total-overall-change">Overall +1.2%</div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="hide-on-med-and-down" style="border: 1px solid lightgray; border-radius: 10px; padding: 10px">
+                <div>
+                    <div style="border-bottom: 1px solid lightgray; padding-top: 5px">Current Spot</div>
+                    <div class="row" style="padding-top: 10px">
+                        <div class="col s4 center-align">
+                            <div>1206.10</div>
+                            <div>Bid</div>
+                        </div>
+                        <div class="col s4 center-align">
+                            <div>1207.10</div>
+                            <div>Ask</div>
+                        </div>
+                        <div class="col s4 center-align">
+                            <div>+23.40</div>
+                            <div>Change</div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col l6 offset-l1 hide-on-med-and-down">
-                <img src="images/goldchart.png" alt="chart" width="650" height="350">
-            </div>
-            <div class="col l12 hide-on-med-and-down">
-                <form class="col l4 right" style="margin: 0 0 0 0; padding: 0 0 0 0">
-                    <div class="input-field">
-                        <input type="search" id="search" required>
-                        <label for="search"><i class="mdi-action-search"></i></label>
-                    </div>
-                </form>
-            </div>
-            <div class="col s12 m12 l12">
-                <table>
-                    <thead>
-                        <tr>
-                            <th class="hide-on-med-and-down">Image</th>
-                            <th>Item</th>
-                            <th>Qty.</th>
-                            <th>Weight/unit (g)</th>
-                            <th>% au</th>
-                            <th>Value</th>
-                        </tr>
-                    </thead>
+        </div>
+        <div id="gold-chart" class="col m5 l6">
+            <img src="images/goldchart.png" style="padding: 16px; width: 100%;" alt="My stack value over time" />
+        </div>
+        <div class="col l10">
+            <div class="col l4">My Stack</div>
+            <!-- <form class="col l4 right">
+                <div class="input-field">
+                    <input id="search" type="search" required style="height: 1rem;">
+                    <label for="search"><i class="mdi-action-search"></i></label>
+                </div>
+            </form> -->
+        </div>
+        <div id="gold-table" class="col s12 m10 right">
+            <table>
+                <thead>
                     <tr>
-                        <td class="hide-on-med-and-down"><img src="images/CoinGoldEagle.jpg" alt="coin" width="40px" height="40px"></td>
-                        <td>US Eagle</td>
-                        <td>1</td>
-                        <td>1.244</td>
-                        <td>.917</td>
-                        <td>1199.10</td>
+                        <th class="hide-on-med-and-down">Image</th>
+                        <th>Item</th>
+                        <th>Qty.</th>
+                        <th>Weight/unit (g)</th>
+                        <th>% au</th>
+                        <th>Value</th>
                     </tr>
-                    <tr>
-                        <td class="hide-on-med-and-down"><img src="images/CoinGoldEagle.jpg" alt="coin" width="40px" height="40px"></td>
-                        <td>US Eagle</td>
-                        <td>5</td>
-                        <td>1.244</td>
-                        <td>.917</td>
-                        <td>5995.10</td>
-                    </tr>
-                    <tr>
-                        <td class="hide-on-med-and-down"><img src="images/CoinGoldEagle.jpg" alt="coin" width="40px" height="40px"></td>
-                        <td>US Eagle</td>
-                        <td>1</td>
-                        <td>1.244</td>
-                        <td>.917</td>
-                        <td>5995.10</td>
-                    </tr>
-                </table>
-            </div>
+                </thead>
+                <tr>
+                    <td class="hide-on-med-and-down"><img src="images/CoinGoldEagle.jpg" alt="coin" width="40px" height="40px"></td>
+                    <td>US Eagle</td>
+                    <td>1</td>
+                    <td>1.244</td>
+                    <td>.917</td>
+                    <td>1199.10</td>
+                </tr>
+                <tr>
+                    <td class="hide-on-med-and-down"><img src="images/CoinGoldEagle.jpg" alt="coin" width="40px" height="40px"></td>
+                    <td>US Eagle</td>
+                    <td>5</td>
+                    <td>1.244</td>
+                    <td>.917</td>
+                    <td>5995.10</td>
+                </tr>
+                <tr>
+                    <td class="hide-on-med-and-down"><img src="images/CoinGoldEagle.jpg" alt="coin" width="40px" height="40px"></td>
+                    <td>US Eagle</td>
+                    <td>1</td>
+                    <td>1.244</td>
+                    <td>.917</td>
+                    <td>5995.10</td>
+                </tr>
+            </table>
         </div>
     </div>
 </body>
