@@ -11,14 +11,16 @@
 <header>
     <nav>
         <div class="nav-wrapper">
-            <a href="#" class="left"><i class="mdi-navigation-refresh"></i></a>
+            <a href="#" class="left"><i class="mdi-action-autorenew"></i></a>
             <a href="home.html" class="brand-logo left">MyStackApp</a>
             <a href="#" class="right"><i class="mdi-action-settings"></i></a>
         </div>
     </nav>
 </header>
-<div class="row">
-    <nav id="sidebar" class="col s1">
+
+<main class="row">
+    <!--  Sidebar Contents  -->
+    <nav id="sidebar" class="col s3 m3 l2">
         <ul>
             <li>
                 <a href="home.html"><i class="mdi-action-home"></i><span>Home</span></a>
@@ -36,64 +38,79 @@
     </nav>
 
     <!--  Main Page Contents  -->
-    <main>
-        <div class="container">
-            <div class="row">
-                <div class="col s12 m6">
-                    <button class="btn waves-effect waves-light red lighten-3">Item Details</button>
-                </div>
+    <div class="col s9">
+        <!--  Page Header -->
+        <div class="row">
+            <div class="section">
+                <h5><a href="home.html" class="black-text">&#8678;</a> Item Details:</h5>
+            </div>
+            <div class="divider"></div>
+        </div>
 
-                <div class="col s12 m6">
-                    <table id="item-details" class="striped">
-                        <tr>
-                            <th>Metal</th>
-                            <td>Gold</td>
-                        </tr>
-                        <tr>
-                            <th>Type</th>
-                            <td>US Eagle</td>
-                        </tr>
-                        <tr>
-                            <th>Purchase Date</th>
-                            <td>04 March 2015</td>
-                        </tr>
-                        <tr>
-                            <th>Qty.</th>
-                            <td>1</td>
-                        </tr>
-                        <tr>
-                            <th>Premium</th>
-                            <td>47.00</td>
-                        </tr>
-                        <tr>
-                            <th>Unit Price</th>
-                            <td>Gold %</td>
-                        </tr>
-                        <tr>
-                            <th>Weight/unit(g)</th>
-                            <td>1.244</td>
-                        </tr>
-                        <tr>
-                            <th>Gold g/u</th>
-                            <td>1.244</td>
-                        </tr>
-                        <tr>
-                            <th>Gold ozt/u</th>
-                            <td>1.244</td>
-                        </tr>
-                        <tr>
-                            <th>Total au (ozt)</th>
-                            <td>1.244</td>
-                        </tr>
-                        <tr>
-                            <th>Total</th>
-                            <td>1199.10</td>
-                        </tr>
-                    </table>
-                </div>
+        <div class="row">
+            <!--  Bullion Image Column -->
+            <div class="col s12 m6 center-align">
+                <img class="responsive-img" src="images/CoinGoldEagle.jpg" alt="bullion image">
+            </div>
+
+            <!--  Bullion Details Column -->
+            <div class="col s12 m6">
+                <table id="item-details" class="striped">
+                    <tr>
+                        <th>Metal:</th>
+                        <td>Gold</td>
+                    </tr>
+                    <tr>
+                        <th>Type:</th>
+                        <td>US Eagle</td>
+                    </tr>
+                    <tr>
+                        <th>Purchase Date:</th>
+                        <td>04 March 2015</td>
+                    </tr>
+                    <tr>
+                        <th>Qty.:</th>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <th>Premium:</th>
+                        <td>47.00</td>
+                    </tr>
+                    <tr>
+                        <th>Unit Price:</th>
+                        <td>1250.60</td>
+                    </tr>
+                    <tr>
+                        <th>Gold %:</th>
+                        <td>0.999</td>
+                    </tr>
+                    <tr>
+                        <th>Weight/unit (g):</th>
+                        <td>1.244</td>
+                    </tr>
+                    <tr>
+                        <th>Gold g/u:</th>
+                        <td>1.244</td>
+                    </tr>
+                    <tr>
+                        <th>Gold ozt/u:</th>
+                        <td>0.0400</td>
+                    </tr>
+                    <tr>
+                        <th>Total au (ozt):</th>
+                        <td>0.0400</td>
+                    </tr>
+                    <tr>
+                        <th>TOTAL:</th>
+                        <td>1199.10</td>
+                    </tr>
+                </table>
             </div>
         </div>
-    </main>
-</div>
+    </div>
+</main>
+<footer id="page-footer" class="row">
+    <span class="col s12 center-align">&copy; 2015 MyStackApp</span>
+</footer>
 </body>
 </html>
