@@ -19,7 +19,7 @@
         <nav id="sidebar" class="col m2 l2 hide-on-small-only">
             <ul>
                 <li>
-                    <a href="home.html" style="color: #666666;"><i class="mdi-action-home"></i><span>Home</span></a>
+                    <a class="active" href="home.html"><i class="mdi-action-home"></i><span>Home</span></a>
                 </li>
                 <li>
                     <a href="product.html"><i class="mdi-au"></i><span>My Gold</span></a>
@@ -47,9 +47,9 @@
                 </div>
                 <div class="clearfix"></div>
             </div>
-            <div id="market-status">
-                <span class="left">Market is <span style="color: #666666; font-weight: bold;">open</span></span>
-                <span class="right" style="color: #666666; font-style: italic;">closes in 3h 35min</span>
+            <div id="market-status-container">
+                <span class="left">Market is <span id="market-status">open</span></span>
+                <span class="right" id="market-closing-time">closes in 3h 35min</span>
                 <div class="clearfix"></div>
             </div>
             <div id="products-summary">

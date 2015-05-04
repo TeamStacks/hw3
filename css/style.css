@@ -113,6 +113,10 @@ nav .brand-logo {
     color: #999999;
 }
 
+#sidebar ul li a.active {
+    color: #666666;
+}
+
 #sidebar ul li a > * {
     display: block;
     text-align: center;
@@ -138,8 +142,18 @@ nav .brand-logo {
     font-size: small;
 }
 
-#market-status {
+#market-status-container {
     margin: 24px 0;
+}
+
+#market-status {
+    color: #666666;
+    font-weight: bold;
+}
+
+#market-closing-time {
+    color: #666666;
+    font-style: italic;
 }
 
 #products-summary {
