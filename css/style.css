@@ -7,11 +7,27 @@
  */
 
 .icon-block {
-  padding: 0 15px;
+    padding: 0 15px;
 }
 
 .button-width {
-	width:100%;
+    width: 100%;
+}
+
+#current-spot {
+    border-bottom: 1px solid lightgray;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+#gold-summary {
+    padding: 16px;
+}
+
+#gold-spot {
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    padding: 10px
 }
 
 .mdi-au:before {
@@ -24,6 +40,31 @@
 
 .mdi-pt:before {
     content: 'Pt';
+}
+
+.mdi-nav {
+    background-color: #F1F1F1;
+    font-size: xx-large;
+}
+
+.mdi-nav span{
+    display: inline-block;
+}
+
+#button1{
+    background-color: #999999;
+}
+
+#button1 a{
+    color: white; padding: 0 16px
+}
+
+#button2{
+    background-color: #CCCCCC;
+}
+
+#button2 a{
+    color: white; padding: 0 16px
 }
 
 body > header {
@@ -128,23 +169,19 @@ nav .brand-logo {
     text-align: right;
 }
 
-@media only screen and (max-width : 600px) {
+@media only screen and (max-width: 600px) {
     body > header {
         margin-bottom: 0;
     }
-
     .nav-wrapper {
         background-color: white;
     }
-
     .row .col {
         padding: 0;
     }
-
     #total-summary a {
         color: #666666;
     }
-
     #market-status {
         padding: 0 16px;
     }

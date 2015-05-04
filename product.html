@@ -34,7 +34,7 @@
                 <a href="home.html" class="brand-logo left">MyStackApp</a>
                 <a href="#" class="right"><i class="mdi-action-settings"></i></a>
             </div>
-            <div class="nav-wrapper hide-on-med-and-up" style="background-color: #F1F1F1;">
+            <div class="nav-wrapper hide-on-med-and-up">
                 <a href="home.html" class="left"><i class="mdi-hardware-keyboard-arrow-left"></i></a>
                 <a href="home.html" class="brand-logo left">My Stack</a>
                 <a href="add.html" class="right"><i class="mdi-content-add"></i></a>
@@ -59,7 +59,7 @@
             </ul>
         </nav>
         <div class="col s12 m5 l4">
-            <div id="total-summary" style="background-color: white;">
+            <div id="gold-summary">
                 <div class="left">
                     <div>
                         <span id="total-value">$18,234.10</span>
@@ -72,10 +72,10 @@
                 </div>
                 <div class="clearfix"></div>
             </div>
-            <div class="hide-on-med-and-down" style="border: 1px solid lightgray; border-radius: 10px; padding: 10px">
+            <div id="gold-spot" class="hide-on-med-and-down">
                 <div>
-                    <div style="border-bottom: 1px solid lightgray; padding-top: 5px">Current Spot</div>
-                    <div class="row" style="padding-top: 10px">
+                    <div id="current-spot">Current Spot</div>
+                    <div class="row">
                         <div class="col s4 center-align">
                             <div>1206.10</div>
                             <div>Bid</div>
@@ -92,12 +92,12 @@
                 </div>
             </div>
         </div>
-        <div class="center-align hide-on-med-and-up" style="background-color: #F1F1F1; font-size: xx-large;">
-            <span id="button1" style="background-color: #999999; display: inline-block;">
-                    <a href="#" onclick="showStats();" style="color: white; padding: 0 16px;"><i class="mdi-navigation-menu"></i></a>
+        <div class="center-align hide-on-med-and-up mdi-nav">
+            <span id="button1">
+                    <a href="#" onclick="showStats();"><i class="mdi-navigation-menu"></i></a>
                 </span>
-            <span id="button2" style="background-color: #CCCCCC; display: inline-block;">
-                    <a href="#" onclick="showChart();" style="color: white; padding: 0 16px;"><i class="mdi-editor-insert-chart"></i></a>
+            <span id="button2">
+                    <a href="#" onclick="showChart();"><i class="mdi-editor-insert-chart"></i></a>
                 </span>
         </div>
         <div hidden id="gold-chart-mobile" class="col m5 l6 hide-on-med-and-up">
