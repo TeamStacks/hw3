@@ -113,3 +113,8 @@ nav .brand-logo {
 .price {
     font-size: large;
 }
+
+#page-footer {
+    background-color: #F1F1F1;
+    padding: 8px 0;
+}
