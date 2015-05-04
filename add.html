@@ -1,154 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <title>
-         Home - MyStackApp
-      </title>
-      <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
-      <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
-      <style>
-         td, th { padding: 4px; }
-         select {
-         display: inline; 
-         width: 150px; 
-         height: 30px; 
-         margin-top: 4px; 
-         margin-left: 3px;
-         }
-         input[type="text"] {
-         width: 150px; 
-         height: 20px; 
-         margin-top: 4px; 
-         margin-bottom: 4px;  
-         margin-left: 3px; 
-         padding-left: 1px;
-         border-style: solid;
-         border-color: black;
-         border-width: 1px;
-         padding-left: 1px;
-         }
-      </style>
-   </head>
-   <body>
-      <header>
-         <nav>
+
+<head>
+    <title>
+        Home - MyStackApp
+    </title>
+    <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <meta charset="UTF-8">
+    <style>
+    td,
+    th {
+        padding: 4px;
+    }
+    
+    select {
+        display: inline;
+        width: 150px;
+        height: 30px;
+        margin-top: 4px;
+        margin-left: 3px;
+    }
+    
+    input[type="text"] {
+        width: 150px;
+        height: 20px;
+        margin-top: 4px;
+        margin-bottom: 4px;
+        margin-left: 3px;
+        padding-left: 1px;
+        border-style: solid;
+        border-color: black;
+        border-width: 1px;
+        padding-left: 1px;
+    }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
             <div class="nav-wrapper">
-               <a href="#" class="left"><i class="mdi-action-autorenew"></i></a>
-               <a href="home.html" class="brand-logo left">MyStackApp</a>
-               <a href="#" class="right"><i class="mdi-action-settings"></i></a>
+                <a href="#" class="left"><i class="mdi-action-autorenew"></i></a>
+                <a href="home.html" class="brand-logo left">MyStackApp</a>
+                <a href="#" class="right"><i class="mdi-action-settings"></i></a>
             </div>
-         </nav>
-      </header>
-      <main class="row">
-         <!--  Sidebar Contents  -->
-         <nav id="sidebar" class="col m2 l2 hide-on-small-only">
+        </nav>
+    </header>
+    <main class="row">
+        <!--  Sidebar Contents  -->
+        <nav id="sidebar" class="col m2 l2 hide-on-small-only">
             <ul>
-               <li>
-                  <a href="home.html"><i class="mdi-action-home"></i><span>Home</span></a>
-               </li>
-               <li>
-                  <a href="product.html"><i class="mdi-au"></i><span>My Gold</span></a>
-               </li>
-               <li>
-                  <a href="product.html"><i class="mdi-ag"></i><span>My Silver</span></a>
-               </li>
-               <li>
-                  <a href="product.html"><i class="mdi-pt"></i><span>My Platinum</span></a>
-               </li>
+                <li>
+                    <a href="home.html"><i class="mdi-action-home"></i><span>Home</span></a>
+                </li>
+                <li>
+                    <a href="product.html"><i class="mdi-au"></i><span>My Gold</span></a>
+                </li>
+                <li>
+                    <a href="product.html"><i class="mdi-ag"></i><span>My Silver</span></a>
+                </li>
+                <li>
+                    <a href="product.html"><i class="mdi-pt"></i><span>My Platinum</span></a>
+                </li>
             </ul>
-         </nav>
-         <!--  Main Page Contents  -->
-         <div class="col s12 m10 l10">
+        </nav>
+        <!--  Main Page Contents  -->
+        <div class="col s12 m10 l10">
             <!--  Page Header -->
             <div class="row">
-               <div class="section">
-                  <h5><a href="home.html" class="black-text">&#8678;</a> Add Item</h5>
-               </div>
-               <div class="divider"></div>
+                <div class="section">
+                    <h5><a href="home.html" class="black-text">&#8678;</a> Add Item</h5>
+                </div>
+                <div class="divider"></div>
             </div>
             <div class="row">
-               <!--  Bullion Image Column -->
-               <div class="col s12 m6 center-align">
-                  <img class="responsive-img" src="images/CoinGoldEagle.jpg" alt="bullion image">
-               </div>
-               <!--  Bullion Details Column -->
-               <div class="col s12 m6">
-                  <form class="col s12">
-                     <table>
-                        <tbody id="item-details">
-                           <tr>
-                              <th>Metal</th>
-                              <td>
-                                 <select class="browser-default" >
-                                    <option value="1">Gold</option>
-                                    <option value="2">Silver</option>
-                                    <option value="3">Platinum</option>
-                                 </select>
-                              </td>
-                           </tr>
-                           <tr>
-                              <th>Type</th>
-                              <td>
-                                 <select class="browser-default" >
-                                    <option value="1">US Eagle</option>
-                                 </select>
-                              </td>
-                           </tr>
-                           <tr>
-                              <th>Purchase Date</th>
-                              <td>
-                                 <select class="browser-default" >
-                                    <option value="1">US Eagle</option>
-                                 </select>
-                              </td>
-                           </tr>
-                           <tr>
-                              <th>Qty.</th>
-                              <td><input type="text" name="Qty." value="1"></td>
-                           </tr>
-                           <tr>
-                              <th>Premium</th>
-                              <td><input type="text" name="Premium" value="47.00"></td>
-                           </tr>
-                           <tr>
-                              <th>Unit Price</th>
-                              <td><input type="text" name="Unit Price" value="1250.60"></td>
-                           </tr>
-                           <tr>
-                              <th>Gold %</th>
-                              <td>0.1 </td>
-                           </tr>
-                           <tr>
-                              <th>Weight/unit (g)</th>
-                              <td> 1.244 </td>
-                           </tr>
-                           <tr>
-                              <th>Gold g/u</th>
-                              <td> 1.244 </td>
-                           </tr>
-                           <tr>
-                              <th>Gold ozt/u</th>
-                              <td> 0.0400 </td>
-                           </tr>
-                           <tr>
-                              <th>Total au (ozt)</th>
-                              <td> 0.0400 </td>
-                           </tr>
-                           <tr>
-                              <th><b>TOTAL</b></th>
-                              <td> 1199.10 </td>
-                           </tr>
-                        </tbody>
-                     </table>
-                  </form>
-                  <a class="waves-effect waves-teal btn-flat">Cancel</a>
-                  <a class="waves-effect waves-light btn" style="width: 14em;">Save to My Stack</a>
-               </div>
+                <!--  Bullion Image Column -->
+                <div class="col s12 m6 center-align">
+                    <img class="responsive-img" src="images/CoinGoldEagle.jpg" alt="bullion image">
+                </div>
+                <!--  Bullion Details Column -->
+                <div class="col s12 m6">
+                    <form class="col s12">
+                        <table>
+                            <tbody id="item-details">
+                                <tr>
+                                    <th>Metal</th>
+                                    <td>
+                                        <select class="browser-default">
+                                            <option value="1">Gold</option>
+                                            <option value="2">Silver</option>
+                                            <option value="3">Platinum</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Type</th>
+                                    <td>
+                                        <select class="browser-default">
+                                            <option value="1">US Eagle</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Purchase Date</th>
+                                    <td>
+                                        <select class="browser-default">
+                                            <option value="1">US Eagle</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Qty.</th>
+                                    <td>
+                                        <input type="text" name="Qty." value="1">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Premium</th>
+                                    <td>
+                                        <input type="text" name="Premium" value="47.00">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Unit Price</th>
+                                    <td>
+                                        <input type="text" name="Unit Price" value="1250.60">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Gold %</th>
+                                    <td>0.1 </td>
+                                </tr>
+                                <tr>
+                                    <th>Weight/unit (g)</th>
+                                    <td> 1.244 </td>
+                                </tr>
+                                <tr>
+                                    <th>Gold g/u</th>
+                                    <td> 1.244 </td>
+                                </tr>
+                                <tr>
+                                    <th>Gold ozt/u</th>
+                                    <td> 0.0400 </td>
+                                </tr>
+                                <tr>
+                                    <th>Total au (ozt)</th>
+                                    <td> 0.0400 </td>
+                                </tr>
+                                <tr>
+                                    <th><b>TOTAL</b></th>
+                                    <td> 1199.10 </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </form>
+                    <a class="waves-effect waves-teal btn-flat">Cancel</a>
+                    <a class="waves-effect waves-light btn" style="width: 14em;">Save to My Stack</a>
+                </div>
             </div>
-         </div>
-      </main>
-      <footer id="page-footer" class="row">
-         <span class="col s12 center-align">&copy; 2015 MyStackApp</span>
-      </footer>
-   </body>
+        </div>
+    </main>
+    <footer id="page-footer" class="row">
+        <span class="col s12 center-align">&copy; 2015 MyStackApp</span>
+    </footer>
+</body>
+
 </html>
