@@ -10,6 +10,25 @@
          td {
          padding: 0;
          }
+         select {
+         display: inline; 
+         width: 150px; 
+         height: 30px; 
+         margin-top: 4px; 
+         margin-left: 3px;
+         }
+         input[type="text"] {
+         width: 150px; 
+         height: 20px; 
+         margin-top: 4px; 
+         margin-bottom: 4px;  
+         margin-left: 3px; 
+         padding-left: 1px;
+         border-style: solid;
+         border-color: black;
+         border-width: 1px;
+         padding-left: 1px;
+         }
       </style>
    </head>
    <body>
@@ -61,7 +80,7 @@
                      <tr>
                         <td>Metal</td>
                         <td>
-                           <select class="browser-default" style="display: inline; width: 150px; height: 30px; margin-top: 4px; margin-left: 3px">
+                           <select class="browser-default" >
                               <option value="1">Gold</option>
                               <option value="2">Silver</option>
                               <option value="3">Platinum</option>
@@ -71,7 +90,7 @@
                      <tr>
                         <td>Type</td>
                         <td>
-                           <select class="browser-default" style="width: 150px; height: 30px; margin-top: 4px; margin-left: 3px">
+                           <select class="browser-default" >
                               <option value="1">US Eagle</option>
                            </select>
                         </td>
@@ -79,34 +98,22 @@
                      <tr>
                         <td>Purchase Date</td>
                         <td>
-                           <select class="browser-default" style="width: 150px; height: 30px; margin-top: 4px; margin-left: 3px;">
+                           <select class="browser-default" >
                               <option value="1">US Eagle</option>
                            </select>
                         </td>
                      </tr>
                      <tr>
                         <td>Qty.</td>
-                        <td><input type="text" name="Qty." value="1" style="width: 150px; height: 20px; margin-top: 4px; margin-bottom: 4px;  margin-left: 3px; padding-left: 1px;
-                           border-style: solid;
-                           border-color: black;
-                           border-width: 1px;
-                           padding-left: 1px;"></td>
+                        <td><input type="text" name="Qty." value="1"></td>
                      </tr>
                      <tr>
                         <td>Premium</td>
-                        <td><input type="text" name="Premium" value="47.00" style="width: 150px; height: 20px; margin-top: 4px;margin-bottom: 4px; margin-left: 3px; padding-left: 1px;
-                           border-style: solid;
-                           border-color: black;
-                           border-width: 1px;
-                           padding-left: 1px;"></td>
+                        <td><input type="text" name="Premium" value="47.00"></td>
                      </tr>
                      <tr>
                         <td>Unit Price</td>
-                        <td><input type="text" name="Unit Price" value="1250.60" style="width: 150px; height: 20px; margin-top: 4px; margin-bottom: 4px; margin-left: 3px; padding-left: 1px;
-                           border-style: solid;
-                           border-color: black;
-                           border-width: 1px;
-                           padding-left: 1px;"></td>
+                        <td><input type="text" name="Unit Price" value="1250.60"></td>
                      </tr>
                      <tr>
                         <td>Gold %</td>
@@ -134,14 +141,8 @@
                         </br>
                   </table>
                </form>
-               <div class="col s12 m6">
-                  <table>
-                     <tr>
-                        <td> <a class="waves-effect waves-teal btn-flat">Cancel</a></td>
-                        <td><a class="waves-effect waves-light btn" style="width: 20em;">Save to My Stack</a></td>
-                     </tr>
-                  </table>
-               </div>
+               <a class="waves-effect waves-teal btn-flat">Cancel</a>
+               <a class="waves-effect waves-light btn" style="width: 14em;">Save to My Stack</a>
             </div>
          </div>
       </main>
