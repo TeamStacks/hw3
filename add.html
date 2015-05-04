@@ -7,9 +7,7 @@
       <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
       <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
       <style>
-         td {
-         padding: 0;
-         }
+         td, th { padding: 4px; }
          select {
          display: inline; 
          width: 150px; 
@@ -43,7 +41,7 @@
       </header>
       <main class="row">
          <!--  Sidebar Contents  -->
-         <nav id="sidebar" class="col s3 m3 l2">
+         <nav id="sidebar" class="col m2 l2 hide-on-small-only">
             <ul>
                <li>
                   <a href="home.html"><i class="mdi-action-home"></i><span>Home</span></a>
@@ -60,7 +58,7 @@
             </ul>
          </nav>
          <!--  Main Page Contents  -->
-         <div class="col s9">
+         <div class="col s12 m10 l10">
             <!--  Page Header -->
             <div class="row">
                <div class="section">
@@ -77,68 +75,70 @@
                <div class="col s12 m6">
                   <form class="col s12">
                      <table>
-                        <tr>
-                           <td>Metal</td>
-                           <td>
-                              <select class="browser-default" >
-                                 <option value="1">Gold</option>
-                                 <option value="2">Silver</option>
-                                 <option value="3">Platinum</option>
-                              </select>
-                           </td>
-                        </tr>
-                        <tr>
-                           <td>Type</td>
-                           <td>
-                              <select class="browser-default" >
-                                 <option value="1">US Eagle</option>
-                              </select>
-                           </td>
-                        </tr>
-                        <tr>
-                           <td>Purchase Date</td>
-                           <td>
-                              <select class="browser-default" >
-                                 <option value="1">US Eagle</option>
-                              </select>
-                           </td>
-                        </tr>
-                        <tr>
-                           <td>Qty.</td>
-                           <td><input type="text" name="Qty." value="1"></td>
-                        </tr>
-                        <tr>
-                           <td>Premium</td>
-                           <td><input type="text" name="Premium" value="47.00"></td>
-                        </tr>
-                        <tr>
-                           <td>Unit Price</td>
-                           <td><input type="text" name="Unit Price" value="1250.60"></td>
-                        </tr>
-                        <tr>
-                           <td>Gold %</td>
-                           <td>0.1 </td>
-                        </tr>
-                        <tr>
-                           <td>Weight/unit (g)</td>
-                           <td> 1.244 </td>
-                        </tr>
-                        <tr>
-                           <td>Gold g/u</td>
-                           <td> 1.244 </td>
-                        </tr>
-                        <tr>
-                           <td>Gold ozt/u</td>
-                           <td> 0.0400 </td>
-                        </tr>
-                        <tr>
-                           <td>Total au (ozt)</td>
-                           <td> 0.0400 </td>
-                        </tr>
-                        <tr>
-                           <td><b>TOTAL</b></td>
-                           <td> 1199.10 </td>
-                        </tr>
+                        <tbody id="item-details">
+                           <tr>
+                              <th>Metal</th>
+                              <td>
+                                 <select class="browser-default" >
+                                    <option value="1">Gold</option>
+                                    <option value="2">Silver</option>
+                                    <option value="3">Platinum</option>
+                                 </select>
+                              </td>
+                           </tr>
+                           <tr>
+                              <th>Type</th>
+                              <td>
+                                 <select class="browser-default" >
+                                    <option value="1">US Eagle</option>
+                                 </select>
+                              </td>
+                           </tr>
+                           <tr>
+                              <th>Purchase Date</th>
+                              <td>
+                                 <select class="browser-default" >
+                                    <option value="1">US Eagle</option>
+                                 </select>
+                              </td>
+                           </tr>
+                           <tr>
+                              <th>Qty.</th>
+                              <td><input type="text" name="Qty." value="1"></td>
+                           </tr>
+                           <tr>
+                              <th>Premium</th>
+                              <td><input type="text" name="Premium" value="47.00"></td>
+                           </tr>
+                           <tr>
+                              <th>Unit Price</th>
+                              <td><input type="text" name="Unit Price" value="1250.60"></td>
+                           </tr>
+                           <tr>
+                              <th>Gold %</th>
+                              <td>0.1 </td>
+                           </tr>
+                           <tr>
+                              <th>Weight/unit (g)</th>
+                              <td> 1.244 </td>
+                           </tr>
+                           <tr>
+                              <th>Gold g/u</th>
+                              <td> 1.244 </td>
+                           </tr>
+                           <tr>
+                              <th>Gold ozt/u</th>
+                              <td> 0.0400 </td>
+                           </tr>
+                           <tr>
+                              <th>Total au (ozt)</th>
+                              <td> 0.0400 </td>
+                           </tr>
+                           <tr>
+                              <th><b>TOTAL</b></th>
+                              <td> 1199.10 </td>
+                           </tr>
+                        </tbody>
                      </table>
                   </form>
                   <a class="waves-effect waves-teal btn-flat">Cancel</a>
