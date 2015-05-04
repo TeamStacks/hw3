@@ -121,6 +121,11 @@ nav .brand-logo {
 
 #item-details th {
     text-align: right;
+    font-weight: normal;
+}
+
+#item-details-total th {
+    text-align: right;
 }
 
 @media only screen and (max-width : 600px) {
