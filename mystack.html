@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Stack - MyStackApp</title>
+    <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <script>
+        function showStats() {
+            document.getElementById("products-summary").hidden = false;
+            document.getElementById("products-chart").hidden = true;
+            document.getElementById("button1").style.backgroundColor = "#999999";
+            document.getElementById("button2").style.backgroundColor = "#CCCCCC";
+        }
+
+        function showChart() {
+            document.getElementById("products-summary").hidden = true;
+            document.getElementById("products-chart").hidden = false;
+            document.getElementById("button1").style.backgroundColor = "#CCCCCC";
+            document.getElementById("button2").style.backgroundColor = "#999999";
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-wrapper" style="background-color: #F1F1F1;">
+                <a href="home.html" class="left"><i class="mdi-hardware-keyboard-arrow-left"></i></a>
+                <a href="home.html" class="brand-logo left">My Stack</a>
+                <a href="#" class="right"><i class="mdi-content-add"></i></a>
+            </div>
+        </nav>
+    </header>
+    <div class="row">
+        <nav id="sidebar" class="col m2 l2 hide-on-small-only">
+            <ul>
+                <li>
+                    <a href="home.html" style="color: #666666;"><i class="mdi-action-home"></i><span>Home</span></a>
+                </li>
+                <li>
+                    <a href="product.html"><i class="mdi-au"></i><span>My Gold</span></a>
+                </li>
+                <li>
+                    <a href="product.html"><i class="mdi-ag"></i><span>My Silver</span></a>
+                </li>
+                <li>
+                    <a href="product.html"><i class="mdi-pt"></i><span>My Platinum</span></a>
+                </li>
+            </ul>
+        </nav>
+        <div class="col s12 m5 l4">
+            <div id="total-summary" style="background-color: white;">
+                <div class="left">
+                    <div>
+                        <span id="total-value">$24,495.23</span>
+                        <span id="total-change">+3.5%</span>
+                    </div>
+                    <div>Total Value</div>
+                </div>
+                <div class="right right-align">
+                    <div id="total-daily-change">Daily +3.5%</div>
+                    <div id="total-overall-change">Overall +1.2%</div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="center-align hide-on-med-and-up" style="background-color: #F1F1F1; font-size: xx-large;">
+                <span id="button1" style="background-color: #999999; display: inline-block;">
+                    <a href="#" onclick="showStats();" style="color: white; padding: 0 16px;"><i class="mdi-navigation-menu"></i></a>
+                </span>
+                <span id="button2" style="background-color: #CCCCCC; display: inline-block;">
+                    <a href="#" onclick="showChart();" style="color: white; padding: 0 16px;"><i class="mdi-editor-insert-chart"></i></a>
+                </span>
+            </div>
+            <div id="products-summary">
+                <div class="section">
+                    <header>
+                        <span class="left" style="font-weight: bold;">Gold</span>
+                        <span class="right">
+                            <span>My Gold Value</span>
+                            <span style="font-size: x-large;">18,234.10</span>
+                            <a href="product.html"><i class="mdi-navigation-chevron-right"></i></a>
+                        </span>
+                        <div class="clearfix divider"></div>
+                    </header>
+                    <div class="row">
+                        <div class="col s3 center-align product-detail">
+                            <div class="price">1199.10</div>
+                            <div>spot price</div>
+                        </div>
+                        <div class="col s3 center-align product-detail">
+                            <div class="price">21.02</div>
+                            <div>total ounces</div>
+                        </div>
+                        <div class="col s3 center-align product-detail">
+                            <div class="price">+23.40</div>
+                            <div>Daily</div>
+                        </div>
+                        <div class="col s3 center-align product-detail">
+                            <div class="price">+16.40</div>
+                            <div>Overall</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section">
+                    <header>
+                        <span class="left" style="font-weight: bold;">Silver</span>
+                        <span class="right">
+                            <span>My Silver Value</span>
+                            <span style="font-size: x-large;">6,261.13</span>
+                            <a href="product.html"><i class="mdi-navigation-chevron-right"></i></a>
+                        </span>
+                        <div class="clearfix divider"></div>
+                    </header>
+                    <div class="row">
+                        <div class="col s3 center-align product-detail">
+                            <div class="price">1199.10</div>
+                            <div>spot price</div>
+                        </div>
+                        <div class="col s3 center-align product-detail">
+                            <div class="price">20.02</div>
+                            <div>total ounces</div>
+                        </div>
+                        <div class="col s3 center-align product-detail">
+                            <div class="price">+5.40</div>
+                            <div>Daily</div>
+                        </div>
+                        <div class="col s3 center-align product-detail">
+                            <div class="price">+4.40</div>
+                            <div>Overall</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section">
+                    <header>
+                        <span class="left" style="font-weight: bold;">Platinum</span>
+                        <span class="right">
+                            <span>My Platinum Value</span>
+                            <span style="font-size: x-large;">0.00</span>
+                            <a href="product.html"><i class="mdi-navigation-chevron-right"></i></a>
+                        </span>
+                        <div class="clearfix divider"></div>
+                    </header>
+                    <div class="row">
+                        <div class="col s3 center-align product-detail">
+                            <div class="price">1199.10</div>
+                            <div>spot price</div>
+                        </div>
+                        <div class="col s3 center-align product-detail">
+                            <div class="price">0</div>
+                            <div>total ounces</div>
+                        </div>
+                        <div class="col s3 center-align product-detail">
+                            <div class="price">-</div>
+                            <div>Daily</div>
+                        </div>
+                        <div class="col s3 center-align product-detail">
+                            <div class="price">-</div>
+                            <div>Overall</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="products-chart" class="col m5 l6">
+            <img src="images/total-graph-mobile.png" style="padding: 16px; width: 100%;" alt="My stack value over time" />
+        </div>
+    </div>
+    <footer id="page-footer" class="row">
+        <span class="col s12 center-align">&copy; 2015 MyStackApp</span>
+    </footer>
+</body>
+</html>
