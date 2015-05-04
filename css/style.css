@@ -122,3 +122,25 @@ nav .brand-logo {
 #item-details th {
     text-align: right;
 }
+
+@media only screen and (max-width : 600px) {
+    body > header {
+        margin-bottom: 0;
+    }
+
+    .nav-wrapper {
+        background-color: white;
+    }
+
+    .row .col {
+        padding: 0;
+    }
+
+    #total-summary a {
+        color: #666666;
+    }
+
+    #market-status {
+        padding: 0 16px;
+    }
+}
